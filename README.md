@@ -31,3 +31,15 @@ cd _путь к директории с файлами проекта_
 ```
 python short_link.py URL
 ```
+
+### Пример запуска
+
+```
+python main.py https://youtu.be/dQw4w9WgXcQ?si=RIyQYg54bjmtJPOS
+https://vk.cc/cDWVsZ
+```
+
+```
+python main.py https://vk.cc/cDWVsZ
+По ссылке переходили 12 раз
+```
