@@ -56,7 +56,7 @@ def is_shorten_link(user_url, user_token, short_link):
    
 
 if __name__ == "__main__":
-    vk_token = os.getenv["VK_TOKEN"]
+    vk_token = os.getenv("VK_TOKEN")
     
     parser = argparse.ArgumentParser(description='Сокращает ссылки ')
     parser.add_argument('name', help='Ваша ссылка')
