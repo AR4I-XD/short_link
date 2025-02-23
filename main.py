@@ -3,7 +3,7 @@ import requests
 import json
 from urllib.parse import urlparse
 import argparse
-
+from dotenv import load_dotenv
 
 def shorten_link(user_token, url):
     payload = {
@@ -56,8 +56,9 @@ def is_shorten_link(user_url, user_token, short_link):
    
 
 if __name__ == "__main__":
+    load_dotenv()
     vk_token = os.getenv("VK_TOKEN")
-    
+
     parser = argparse.ArgumentParser(description='Сокращает ссылки ')
     parser.add_argument('name', help='Ваша ссылка')
     args = parser.parse_args()
@@ -78,4 +79,3 @@ if __name__ == "__main__":
             print("Не прaвильный ввод ссылки")
         
         
-
